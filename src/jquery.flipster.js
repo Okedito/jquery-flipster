@@ -320,7 +320,7 @@
                     itemHeight;
 
                 _items.each(function() {
-                    itemHeight = $(this).height();
+                    itemHeight = $(this).outerHeight(true);
                     if ( itemHeight > biggestHeight ) { biggestHeight = itemHeight; }
                 });
                 return biggestHeight;
